@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsnd --respawn --pretty --transpile-only ./src/index.ts",
-    "start": "node dist/src/index.js",
+    "start": "node ./dist/src/index.js",
     "build": "tsc"
   },
   "keywords": [],
