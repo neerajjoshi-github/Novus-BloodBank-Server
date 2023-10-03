@@ -6,16 +6,8 @@
   "scripts": {
     "dev": "tsnd --respawn --pretty --transpile-only ./src/index.ts",
     "start": "nodemon src/index.ts",
-    "build": "rimraf dist && tsc",
-    "ts.check": "tsc --project tsconfig.json",
-    "add-build": "git add dist",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
-  "pre-commit": [
-    "ts.check",
-    "build",
-    "add-build"
-  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -36,8 +28,6 @@
     "express": "^4.18.2",
     "http-errors": "^2.0.0",
     "jsonwebtoken": "^9.0.1",
-    "mongoose": "^7.3.2",
-    "pre-commit": "^1.2.2",
-    "rimraf": "^5.0.5"
+    "mongoose": "^7.3.2"
   }
 }

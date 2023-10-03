@@ -43,4 +43,5 @@ app.use((error: unknown, req: Request, res: Response, next: NextFunction) => {
     .status(statusCode)
     .json({ status: "not ok", message: errorMessage, data: {} });
 });
+
 export default app;
